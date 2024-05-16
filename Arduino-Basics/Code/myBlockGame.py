@@ -26,7 +26,7 @@ UPDATE_TIME = 20  # 更新間隔（ms）
 
 
 # シリアルポートの初期化（Arduinoの接続されているポートに応じて変更）
-ser = serial.Serial('COM3', 9600)
+ser = serial.Serial('COM4', 9600)
 
 class Block:
     def __init__(self, canvas, x, y, color):
@@ -158,7 +158,7 @@ class BlockBreaker:
                 break
 
     def motion(self):
-        if ser.in_waiting > 0:
+        while ser.in_waiting > 0:
             line = ser.readline().decode('utf-8').rstrip()
             pot_value = int(line)
             # 可変抵抗の値を画面の幅にマッピング
