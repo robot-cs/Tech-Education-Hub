@@ -160,10 +160,14 @@ class BlockBreaker:
     def motion(self):
         while ser.in_waiting > 0:
             line = ser.readline().decode('utf-8').rstrip()
-            pot_value = int(line)
-            # 可変抵抗の値を画面の幅にマッピング
-            mapped_value = self.map_value(pot_value, 0, 1023, 0, self.canvas.winfo_width() - self.bar.width)
-            self.bar.move(mapped_value)
+            try:
+                pot_value = int(line)
+                # 可変抵抗の値を画面の幅にマッピング
+                mapped_value = self.map_value(pot_value, 0, 1023, 
+                    0, self.canvas.winfo_width() - self.bar.width)
+                self.bar.move(mapped_value)
+            except ValueError:
+                print("Invalid input received. Skipping this value.")
 
     @staticmethod
     def map_value(x, in_min, in_max, out_min, out_max):
