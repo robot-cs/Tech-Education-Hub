@@ -1,40 +1,61 @@
-# Tech-Education-Hub
+# Tech-Education-Hub（テック・エデュケーション・ハブ）
 
-Welcome to the Tech-Education-Hub! This repository serves as a central resource for students, educators, and hobbyists to access educational materials related to various technology and engineering topics. We aim to provide hands-on workshops, tutorials, and resources that empower you to learn and implement projects in areas such as Arduino, Raspberry Pi, and 3D printing.
+ようこそ、Tech-Education-Hub へ！  
+このリポジトリは、学生・教育者・趣味で取り組む方々を対象に、技術や工学に関する教育用リソースを提供することを目的としたハブです。Arduino、Raspberry Pi、3Dプリンティングなど、実際に手を動かして学べるワークショップやチュートリアルを中心に資料をまとめています。
 
-## About This Repository
+---
 
-This repository contains a wealth of educational content organized by technology topics. Each section includes session-specific materials for each workshop or course offered, encompassing code examples, schematics, and detailed instructions.
+## このリポジトリについて
 
-## How to Use This Repository
+本リポジトリでは、技術ごとに内容を整理し、各種ワークショップや講座で使用したコード例、回路図、詳細な手順書などを掲載しています。
 
-- **Navigating the Repository**: Each main directory represents a different technology or workshop theme. Inside each directory, you will find subdirectories for each session or course that contain all related materials.
-- **Downloading Materials**: To download materials, you can either clone the repository or download specific files as needed.
-- **Participating in Workshops**: Information on upcoming workshops and how to participate can be found within each session's folder.
+---
 
-## Repository Structure
+## リポジトリの使い方
 
-- **Arduino-Basics**
-  - Session materials include Arduino sketches (.ino files), breadboard layouts, and instructional guides.
-- **Raspberry-Pi-Projects**
-  - Explore projects utilizing Raspberry Pi, including Python scripts and hardware integration guides.
-- **3D-Printing**
-  - Find 3D model files (.stl) and tutorials on creating and printing your designs.
+- **ナビゲーション方法**  
+  各フォルダはそれぞれ異なる技術やワークショップを表しており、その中に回ごとの資料がまとまっています。
 
-## Contributing
+- **資料のダウンロード方法**  
+  リポジトリ全体をクローンするか、必要なファイルだけ個別にダウンロードして使用できます。
 
-We welcome contributions from the community! If you have a project, tutorial, or educational material you would like to share, please follow these steps:
+- **ワークショップへの参加**  
+  今後のワークショップ情報や参加方法は、各セッションフォルダ内に記載しています。
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b your-branch-name`).
-3. Commit your changes (`git commit -am 'Add some feature'`).
-4. Push to the branch (`git push origin your-branch-name`).
-5. Submit a pull request.
+---
 
-## Support
+## フォルダ構成
 
-If you have any questions or need help navigating the repository, please open an issue and we will do our best to assist you.
+- **Arduino-Basics**  
+  Arduinoスケッチ（.inoファイル）、ブレッドボードの配線図、手順ガイドなどを収録。
 
-## License
+- **Raspberry-Pi-Projects(未完了)**  
+  Pythonスクリプトやハードウェア連携の手順書付きプロジェクトを掲載。
 
-All materials in this repository are shared under the MIT License unless otherwise noted.
+- **3D-Printing(未完了)**  
+  3Dモデルファイル（.stl）や、設計・プリントに関するチュートリアルをまとめています。
+
+---
+
+## コントリビューション（貢献について）
+
+皆さんの貢献を歓迎します！  
+プロジェクトやチュートリアルを共有したい場合は、以下の手順でプルリクエストをお願いします。
+
+1. 本リポジトリをフォークします  
+2. 新しいブランチを作成（例：`git checkout -b your-branch-name`）  
+3. 変更をコミット（例：`git commit -am 'Add new tutorial'`）  
+4. ブランチをプッシュ（例：`git push origin your-branch-name`）  
+5. プルリクエストを作成します
+
+---
+
+## サポート
+
+使い方がわからない、質問がある場合は [Issues] にてお気軽にご連絡ください。できる限りサポートします。
+
+---
+
+## ライセンス
+
+このリポジトリ内のすべての資料は、特に記載がない限り MITライセンス のもとで公開されています。
